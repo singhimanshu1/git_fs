@@ -3,4 +3,14 @@ https://kb.asipto.com/freeswitch:kamailio-3.1.x-freeswitch-1.0.6d-sbc
 
 1. dont changes in  internal.xml and external.xml
 2 changes in vars.xml make 5060--to 15060 and 5061 to 15061
+3 uncomment listen and make 
+listen=udp:ip:kamailioPort
+listen=udp:192.168.1.44:5060
+port = 5060
+4 #!ifdef WITH_FREESWITCH
+freeswitch.bindip = "192.168.1.44" desc "FreeSWITCH IP Address"
+freeswitch.bindport = "15060" desc "FreeSWITCH Port"
+#!endif
+  port will be simmilar at vars.xml changes
+
 remains all will be same
