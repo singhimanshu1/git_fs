@@ -1,0 +1,6 @@
+follow this link
+https://kb.asipto.com/freeswitch:kamailio-3.1.x-freeswitch-1.0.6d-sbc
+
+1. dont changes in  internal.xml and external.xml
+2 changes in vars.xml make 5060--to 15060 and 5061 to 15061
+remains all will be same
